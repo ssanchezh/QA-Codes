@@ -1,3 +1,9 @@
+/*
+Simple code for create a pair of Keys, Public and Private Key.
+This code create a keys in RSA254 and encode in Base64 for save them
+Using library JJWT --->https://github.com/jwtk/jjwt
+*/
+
 import java.security.KeyPairGenerator;
 import java.security.KeyPair;
 import java.security.PrivateKey;
