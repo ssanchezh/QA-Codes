@@ -1,6 +1,7 @@
 /*
 Simple code for create JWT Token with RSA256 PrivateKey
 Using library JJWT --->https://github.com/jwtk/jjwt
+For languages: Groovy and Java
 */
 
 import io.jsonwebtoken.Jwts
