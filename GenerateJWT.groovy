@@ -37,6 +37,6 @@ Date HLater = new Date(HLater);
 //sign JWT with subject, claim and PrivateKey
 String jwt = Jwts.builder().setNotBefore(HPrevious).setIssuedAt(HActual).setExpiration(HLater).setSubject(subject).claim(claim1).signWith(privateKey).compact();
 
-//Put JWT in JMeter var
+//Put JWT in JMeter var for use in header for autentication
 vars.put("jwt", jwt);
 
