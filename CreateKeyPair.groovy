@@ -30,7 +30,7 @@ PrivateKey privateKey = (PrivateKey) keyPair.getPrivate();
 
 
 String encodedPublicKey = Base64.getEncoder().encodeToString(publicKey.getEncoded());
-String encodedPrivateKey = Base64.getEncoder().encodeToString(privateKey.getEncoded());
+String encodedPrivateKey = Base64.getEncoder().encodeToString(privateKey.getEncoded());//The server must have this key to verify the JWT signed with the private key
 
 // Convert and put keys in Jmeter variables (declare in 'User Defined Variables')
 vars.put("PublicKey", new String(convertToPublicKey(encodedPublicKey)));
